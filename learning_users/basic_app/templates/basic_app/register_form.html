@@ -8,7 +8,7 @@ Please register
 	<form method="POST" accept-charset="utf-8" enctype="multipart/form-data">
 		{% csrf_token %}
 		{{ user_form.as_p }}
-		{{ user_profile_info_form.as_p }}
+		{{ profile_form.as_p }}
 		<input type="submit" value="register">
 	</form>
 {% endblock content %}
